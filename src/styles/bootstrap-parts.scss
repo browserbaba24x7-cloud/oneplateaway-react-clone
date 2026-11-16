@@ -1,0 +1,12 @@
+// Only the Bootstrap pieces React-Bootstrap components need (Modal, Close, Fade/Collapse transitions).
+// We deliberately do NOT import reboot, utilities, grid or forms: Bootstrap's !important spacing utilities
+// (p-4, mb-6...) would override the original Tailwind spacing and break pixel-perfect parity.
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/modal";

@@ -1,0 +1,52 @@
+.op-modal.modal {
+  z-index: 9999;
+}
+
+.op-modal .modal-dialog {
+  --bs-modal-margin: 0.5rem;
+  max-width: 28rem;
+  width: calc(100% - 1rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .op-modal .modal-dialog {
+    --bs-modal-margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+.op-modal .modal-content {
+  --bs-modal-bg: #fff;
+  --bs-modal-border-width: 0;
+  --bs-modal-border-radius: 0;
+  color: inherit;
+}
+
+.modal-backdrop.op-backdrop {
+  --bs-backdrop-bg: #000;
+  --bs-backdrop-opacity: 0.6;
+  z-index: 9998;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.modal-open {
+  padding-right: 0 !important;
+}
+
+.op-field,
+.op-label,
+.op-btn,
+.op-alert {
+  box-sizing: border-box;
+}
+
+.op-btn {
+  cursor: pointer;
+}
+
+.StripeElement {
+  width: 100%;
+}

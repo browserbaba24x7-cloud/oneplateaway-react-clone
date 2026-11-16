@@ -1,0 +1,8 @@
+import { Button } from 'react-bootstrap';
+import heroBg from '../assets/images/hero-bg.png';
+
+export default function Hero({ onGive, onMonthly }) {
+  return (
+    <div className="hero-section relative w-full py-8 md:py-10 flex items-center justify-center text-center overflow-hidden rounded-[2rem] shadow-2xl mb-8 group"><div className="absolute inset-0 bg-cover bg-center transition-transform duration-[20s] ease-in-out group-hover:scale-110" style={{ backgroundImage: `url("${heroBg}")` }} /><div className="absolute inset-0 bg-primary/80 mix-blend-multiply" /><div className="absolute inset-0 bg-black/30" /> <div className="relative z-20 w-full max-w-7xl mx-auto px-6"><h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-white drop-shadow-lg tracking-tight">Feed Someone in Makkah Today.</h1><div className="w-24 h-1 bg-secondary mx-auto mb-4 rounded-full" /><div className="text-lg sm:text-xl md:text-2xl text-white font-medium leading-relaxed drop-shadow-md max-w-2xl mx-auto">Even if you can’t be there, your sadaqah can.</div><div className="mt-12 w-full animate-fade-in-up"><div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10 mb-8"><Button variant={null} className="px-8 py-4 bg-secondary text-white font-black text-lg rounded-full shadow-xl hover:bg-accent transition-all transform hover:-translate-y-1 w-full sm:w-auto" onClick={onGive}>Feed Someone Now</Button><Button variant={null} className="px-8 py-4 bg-white text-secondary font-black text-lg rounded-full shadow-xl hover:bg-gray-50 transition-all transform hover:-translate-y-1 w-full sm:w-auto border-2 border-transparent hover:border-secondary" onClick={onMonthly}>Give a plate monthly</Button></div></div></div></div>
+  );
+}
